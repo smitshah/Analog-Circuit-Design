@@ -1,0 +1,21 @@
+Circuit: * F:\Smit SIT\College\Google Classroom\Second year\Sem 4\ACD\Lab\LTSpice\Inverting open loop\inverting openloop.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Feb 02 19:40:29 2019
+Total elapsed time: 0.310 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3949
+traniter = 3946
+tranpoints = 1539
+accept = 1386
+rejected = 153
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 318 bytes object code size  0.2/0.1/[0.0]
+Matrix Compiler2: 584 bytes object code size  0.2/0.1/[0.1]
+
