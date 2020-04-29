@@ -1,0 +1,154 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM741 U1
+U 1 1 5C4A0ECA
+P 5250 3150
+F 0 "U1" H 5250 3400 50  0000 L CNN
+F 1 "LM741" H 5250 3300 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5300 3200 50  0001 C CNN
+F 3 "" H 5400 3300 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 3450
+NoConn ~ 5350 3450
+$Comp
+L R R1
+U 1 1 5C4A0F5F
+P 4650 3050
+F 0 "R1" V 4650 3050 50  0000 C CNN
+F 1 "1k ohm" V 4550 3050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4580 3050 50  0001 C CNN
+F 3 "" H 4650 3050 50  0001 C CNN
+	1    4650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R Rf1
+U 1 1 5C4A0F8A
+P 5400 3550
+F 0 "Rf1" V 5400 3550 50  0000 C CNN
+F 1 "5k ohm" V 5500 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 3550 50  0001 C CNN
+F 3 "" H 5400 3550 50  0001 C CNN
+	1    5400 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01_Male -Vcc1
+U 1 1 5C4A0FC8
+P 5150 3650
+F 0 "-Vcc1" V 5200 3750 50  0000 C CNN
+F 1 "-12V" V 5100 3700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch1.27mm" H 5150 3650 50  0001 C CNN
+F 3 "" H 5150 3650 50  0001 C CNN
+	1    5150 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01_Male O2
+U 1 1 5C4A0FFB
+P 5900 3150
+F 0 "O2" H 5900 3200 50  0000 C CNN
+F 1 "CRO" H 5900 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch1.27mm" H 5900 3150 50  0001 C CNN
+F 3 "" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01_Male I1
+U 1 1 5C4A1024
+P 4300 3050
+F 0 "I1" H 4300 3100 50  0000 C CNN
+F 1 "sine 2V 1kHz" H 4250 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch1.27mm" H 4300 3050 50  0001 C CNN
+F 3 "" H 4300 3050 50  0001 C CNN
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01_Male Ground1
+U 1 1 5C4A104D
+P 4550 3250
+F 0 "Ground1" H 4500 3300 50  0000 C CNN
+F 1 "Gnd" H 4550 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch1.27mm" H 4550 3250 50  0001 C CNN
+F 3 "" H 4550 3250 50  0001 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01_Male +Vcc1
+U 1 1 5C4A1076
+P 5150 2650
+F 0 "+Vcc1" V 5200 2750 50  0000 C CNN
+F 1 "+12V" V 5100 2650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch1.27mm" H 5150 2650 50  0001 C CNN
+F 3 "" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3050 4950 3050
+Wire Wire Line
+	4750 3250 4950 3250
+Wire Wire Line
+	5550 3150 5700 3150
+Wire Wire Line
+	5550 3550 5650 3550
+Wire Wire Line
+	5650 3550 5650 3150
+Connection ~ 5650 3150
+Wire Wire Line
+	5250 3550 4850 3550
+Wire Wire Line
+	4850 3550 4850 3250
+Connection ~ 4850 3250
+$EndSCHEMATC
